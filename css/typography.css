@@ -1,0 +1,72 @@
+/*===================
+   Typography CSS
+====================*/
+
+:root {
+
+    --baseline: 24px;
+  
+    /* spacing values */
+    --space-sm:   calc(var(--baseline)/2);
+    --space-md:   var(--baseline);
+    --space-lg:   calc(var(--baseline)*2);
+    --space-xl:   calc(var(--baseline)*3);
+
+    /* font family */
+    --font-primary: 'Open Sans', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+
+    /* font color */
+    --primary-color: #7209b7;
+    --secondary-color: #560bad;
+    --support-color: #000;
+    --primary-contrast: #fff;
+
+    /* base values */
+    --text-base-size: 1em;
+    --text-scale-ratio: 1.2;
+
+    /* line-height */
+    --heading-line-height: 1.2;
+    --body-line-height: 1.4;
+
+}
+
+body {
+    font-size: var(--text-base-size);
+    font-family: var(--font-primary);
+    color: var(--color-text);
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-secondary);
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: var(--space-lg);
+}
+
+h2 {
+    margin-bottom: var(--space-md);
+}
+  
+p {
+    margin-bottom: var(--space-sm);
+}

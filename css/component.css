@@ -1,0 +1,76 @@
+/*Button*/
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    background: #560BAD;
+    background: -webkit-linear-gradient(left, #560BAD, #7209B7);
+    background: -moz-linear-gradient(left, #560BAD, #7209B7);
+    background: linear-gradient(to right, #560BAD, #7209B7);
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    cursor: pointer;
+    font-size: calc(16px + (20 - 16) * ((100vw - 768px) / (1920 - 768)));
+    font-weight: 500;
+    z-index: 1;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: #560BAD;
+    background: -webkit-linear-gradient(right, #560BAD, #7209B7);
+    background: -moz-linear-gradient(right, #560BAD, #7209B7);
+    background: linear-gradient(to left, #560BAD, #7209B7);
+    border-radius: 4px;
+    transition: opacity .25s ease-in-out;
+    opacity: 0;
+}
+
+.button:hover::before {
+    opacity: 1;
+}
+
+
+/*Form Input Field*/
+
+.form-input-wrapper {
+    display: flex;
+    width: 420px;
+    margin-top: 0;
+    margin-right: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-self: auto;
+    flex: 0 auto;
+    background-color: transparent;
+    color: #332e2e;
+    line-height: 150%;
+    font-weight: 400;
+    text-align: left;
+}
+
+.text-field {
+    display: flex;
+    height: 44px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: #fff;
+    background-color: transparent;
+    color: #332e2e;
+    line-height: 150%;
+    font-weight: 400;
+}
+
