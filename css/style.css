@@ -42,7 +42,7 @@ body {
     margin-bottom: 23px;
     padding-bottom: 0px;
     background-color: var(--secondary-color);
-    background-image: url(../images/neon-tropical.jpg);
+    background-image: url(../assets/images/neon-tropical.jpg);
     background-position: 50% 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -188,7 +188,7 @@ footer {
 /*Internal Page CSS*/
 
 .internal-layout .hero {
-    background-image: url(../images/abstract-cloud.jpg);
+    background-image: url(../assets/images/abstract-cloud.jpg);
 }
 
 .content-grid .post {
